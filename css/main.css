@@ -1802,9 +1802,33 @@
       display: block;
     }
   }
+  .course-heroe-info .course-heroe-data {
+    margin-top: 30px;
+  }
   @media (min-width: 992px) {
     .course-heroe-info .course-heroe-data {
       border-left: 1px solid var(--ae-primary);
+      margin-top: initial;
+    }
+  }
+  .course-heroe-info .course-heroe-data-init {
+    border-bottom: 1px solid var(--ae-primary);
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  @media (min-width: 992px) {
+    .course-heroe-info .course-heroe-data-init {
+      border-bottom: 0;
+    }
+  }
+  .course-heroe-info .course-heroe-data-lenght {
+    border-bottom: 1px solid var(--ae-primary);
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  @media (min-width: 992px) {
+    .course-heroe-info .course-heroe-data-lenght {
+      border-bottom: 0;
     }
   }
   .course-heroe-info .course-heroe-data-cta {
