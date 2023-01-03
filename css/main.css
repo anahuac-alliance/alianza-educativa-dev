@@ -187,17 +187,14 @@ body {
   border-right: 0;
   border-top: 0;
   color: var(--ae-warning);
-  content: "\f078";
+  content: "";
   display: inline-block;
-  font-family: "Font Awesome 6 Free";
-  font-size: 0.7rem;
-  font-weight: 400;
   margin-left: initial;
   vertical-align: initial;
 }
 
 /* Primary button */
-.btn-primary, .btn-whatsapp-stiky {
+.btn-primary, .btn-whatsapp-sticky {
   --bs-btn-active-bg: var(--ae-btn-active-bg-primary);
   --bs-btn-active-border-color: var(--ae-no-color);
   --bs-btn-active-color: var(--ae-btn-active-color-primary);
@@ -251,7 +248,7 @@ body {
 }
 
 /* Shoping-cart */
-.btn-shoping-cart {
+.btn-shopping-cart {
   --bs-btn-color: var(--ae-white);
   --bs-btn-hover-color: var(--ae-white);
 }
@@ -306,7 +303,7 @@ body {
 }
 
 /* Sticky button whatsapp */
-.btn-whatsapp-stiky {
+.btn-whatsapp-sticky {
   bottom: 443px;
   font-size: 1.4rem;
   height: 48px;
@@ -314,9 +311,12 @@ body {
   right: 0;
   width: 48px;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 992px) {
-  .btn-whatsapp-stiky {
+  .btn-whatsapp-sticky {
     bottom: 243px;
     font-size: 1.8rem;
     height: 70px;
@@ -719,6 +719,11 @@ body {
 @media (min-width: 768px) {
   .suscriptor-content img.devices-picture-desktop {
     display: block;
+  }
+}
+@media (min-width: 992px) {
+  .suscriptor-content img.devices-picture-desktop {
+    max-width: initial;
   }
 }
 .suscriptor-cta {
@@ -1327,23 +1332,23 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
 }
 .diplomados-partners::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 10px;
-  left: 0;
-  top: 0;
   -moz-box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.15);
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .diplomados-partners-content {
-  display: flex;
-  height: 190px;
-  box-sizing: border-box;
   align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
+  height: 190px;
+  justify-content: center;
 }
 @media (min-width: 992px) {
   .diplomados-partners-content {
@@ -1351,8 +1356,8 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   }
 }
 .diplomados-partners-content img {
-  height: 82px;
   display: block;
+  height: 82px;
   margin: 20px 0;
 }
 @media (min-width: 992px) {
@@ -1362,10 +1367,10 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 
 .diplomado {
-  padding: 20px 0;
-  box-sizing: border-box;
   background-color: var(--ae-white);
+  box-sizing: border-box;
   color: var(--ae-black);
+  padding: 20px 0;
 }
 @media (min-width: 992px) {
   .diplomado {
@@ -1374,9 +1379,9 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   }
 }
 .diplomado-content .diplomado-cta-btn {
-  margin: 20px auto;
   display: flex;
   justify-content: center;
+  margin: 20px auto;
 }
 .diplomado-content .diplomado-cta-btn .btn-cta {
   min-width: 80%;
@@ -1402,8 +1407,8 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 .diplomado-content-info .diplomado-description-block p {
   --max-lines: 3;
   --line-height: 1.5;
-  max-height: calc(var(--max-lines) * 0.9rem * var(--line-height));
   line-height: var(--line-height);
+  max-height: calc(var(--max-lines) * 0.9rem * var(--line-height));
   overflow: hidden;
   position: relative;
 }
@@ -1438,13 +1443,13 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   position: relative;
 }
 .diplomado-content-info .diplomado-wrapper::before, .diplomado-content-info .diplomado-wrapper::after {
-  content: "";
-  position: absolute;
   background-color: var(--ae-black);
+  content: "";
+  height: 100%;
+  position: absolute;
   top: 0;
   width: 13px;
   z-index: 10;
-  height: 100%;
 }
 .diplomado-content-info .diplomado-wrapper::before {
   left: -12px;
@@ -1474,22 +1479,6 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   border-right: 1px solid var(--ae-white);
   position: relative;
 }
-.diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col::after {
-  content: "+";
-  font-family: "Font Awesome Free 6";
-  position: absolute;
-  right: -13px;
-  z-index: 1;
-  color: var(--ae-orange);
-  font-weight: 900;
-  font-size: 2.8rem;
-  top: 40%;
-}
-@media (min-width: 992px) {
-  .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col::after {
-    display: none;
-  }
-}
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col:nth-child(4)::after {
   display: none;
 }
@@ -1497,36 +1486,37 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   border-right: 0;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-head {
-  background-color: var(--ae-black);
-  color: var(--ae-orange);
-  font-size: 1.2rem;
-  display: flex;
   align-items: center;
-  padding: 10px 15px;
+  background-color: var(--ae-black);
   box-sizing: border-box;
-  position: relative;
+  color: var(--ae-orange);
+  display: flex;
   flex-direction: row;
+  font-size: 1.2rem;
   height: 110px;
+  padding: 10px 15px;
+  position: relative;
 }
 @media (min-width: 992px) {
   .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-head {
-    color: var(--ae-white);
-    background-color: var(--ae-orange);
-    flex-direction: column;
     align-items: flex-start;
+    background-color: var(--ae-orange);
+    color: var(--ae-white);
+    flex-direction: column;
   }
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-head::after {
-  content: "+";
-  font-family: "Font Awesome Free 6";
-  position: absolute;
-  right: -13px;
-  z-index: 1;
+  background-image: url('/assets/image/shared/icons/icon-plus.svg');
+  background-repeat: no-repeat;
   color: var(--ae-black);
-  font-weight: 900;
-  font-size: 2.8rem;
-  top: 17%;
+  content: "";
   display: none;
+  height: 30px;
+  position: absolute;
+  right: -17px;
+  top: 37%;
+  width: 30px;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-head::after {
@@ -1535,26 +1525,26 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   }
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-head span {
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  align-items: center;
   background-color: var(--ae-white);
+  border-radius: 50%;
+  box-sizing: border-box;
   color: var(--ae-black);
   display: block;
   display: flex;
+  height: 28px;
   justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
   margin-right: 15px;
+  width: 28px;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-head-title {
   text-transform: uppercase;
   position: relative;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col-body {
-  padding: 15px;
   box-sizing: border-box;
   color: var(--ae-white);
+  padding: 15px;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-col:nth-child(4) {
   border-right: 0;
@@ -1568,8 +1558,8 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   display: none;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta {
-  display: none;
   align-items: center;
+  display: none;
   flex-wrap: wrap;
 }
 @media (min-width: 992px) {
@@ -1581,11 +1571,11 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   margin: 0 auto;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta .arrow-right {
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
   border-left: 35px solid var(--ae-orange);
+  border-top: 35px solid transparent;
+  height: 0;
+  width: 0;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta > div p {
   width: 100%;
@@ -1595,31 +1585,31 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   text-transform: uppercase;
 }
 .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta-button {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-.diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta-button .btn.btn-primary, .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta-button .btn.btn-whatsapp-stiky {
+.diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta-button .btn.btn-primary, .diplomado-content-info .diplomado-wrapper .diplomado-module-table .module-cta-button .btn.btn-whatsapp-sticky {
   display: block;
   width: 90%;
 }
 .diplomado-content-info .diplomado-movil-cta {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  border-top: 2px solid var(--ae-black);
-  position: relative;
   border-bottom: 1px solid rgba(var(--ae-black-rgb), 0.2);
+  border-top: 2px solid var(--ae-black);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
 }
 .diplomado-content-info .diplomado-movil-cta::before, .diplomado-content-info .diplomado-movil-cta::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: calc(100% + 3px);
-  top: -2px;
-  border-top: 2px solid var(--ae-black);
   border-bottom: 1px solid rgba(var(--ae-black-rgb), 0.2);
+  border-top: 2px solid var(--ae-black);
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  top: -2px;
+  width: 12px;
 }
 .diplomado-content-info .diplomado-movil-cta::before {
   left: -12px;
@@ -1628,10 +1618,10 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   right: -12px;
 }
 .diplomado-content-info .diplomado-movil-cta .arrow-down {
-  width: 0;
-  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
+  height: 0;
+  width: 0;
   border-top: 30px solid var(--ae-orange);
 }
 @media (min-width: 992px) {
@@ -1640,40 +1630,40 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   }
 }
 .diplomado-content-info .diplomado-movil-cta-head {
-  width: 100%;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .diplomado-content-info .diplomado-movil-cta-head > div {
+  align-items: center;
   display: flex;
+  font-size: 1.8rem;
   justify-content: center;
   width: 100%;
-  align-items: center;
-  font-size: 1.8rem;
 }
 .diplomado-content-info .diplomado-movil-cta-head > div p {
-  text-transform: uppercase;
-  padding: 0 10px;
   box-sizing: border-box;
+  padding: 0 10px;
+  text-transform: uppercase;
 }
 .diplomado-content-info .diplomado-movil-cta-head > p {
-  font-weight: 400;
   font-size: 1.4rem;
+  font-weight: 400;
 }
 .diplomado-content-info .diplomado-movil-cta-body {
-  width: 100%;
   margin: 30px 0;
+  width: 100%;
 }
 .diplomado-content-info .diplomado-movil-cta-body p {
-  width: 80%;
   margin: 0 auto;
   text-align: center;
+  width: 80%;
 }
 
 .why-anahuac {
-  padding: 30px 0;
   box-sizing: border-box;
+  padding: 30px 0;
 }
 .why-anahuac-content {
   display: grid;
@@ -1681,9 +1671,9 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 @media (min-width: 992px) {
   .why-anahuac-content {
+    align-content: center;
     grid-template-columns: repeat(5, 1fr);
     height: 280px;
-    align-content: center;
   }
 }
 .why-anahuac-content .why-anahuac-item:first-of-type {
@@ -1698,16 +1688,16 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   text-align: center;
 }
 .why-anahuac-content .why-anahuac-item {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
 }
 @media (min-width: 992px) {
   .why-anahuac-content .why-anahuac-item {
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
   }
 }
 .why-anahuac-content .why-anahuac-item:first-of-type p {
@@ -1724,25 +1714,25 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   }
 }
 .why-anahuac-content .why-anahuac-item .title {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  align-items: center;
   background-color: var(--ae-primary);
+  border-radius: 50%;
   color: var(--ae-white);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 1.5rem;
+  height: 80px;
+  justify-content: center;
+  text-align: center;
+  width: 80px;
 }
 @media (min-width: 992px) {
   .why-anahuac-content .why-anahuac-item .title {
-    border-radius: initial;
-    width: initial;
-    height: initial;
     background-color: transparent;
+    border-radius: initial;
     color: var(--ae-black);
     font-size: 2rem;
+    height: initial;
+    width: initial;
   }
 }
 .why-anahuac-content .why-anahuac-item p:last-of-type {
@@ -1750,7 +1740,7 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 @media (min-width: 992px) {
   .why-anahuac-content .why-anahuac-item p:last-of-type {
-    text-align: left;
     height: 50px;
+    text-align: left;
   }
 }
