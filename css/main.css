@@ -255,15 +255,6 @@
   
   /* Social buttons */
   .btn-circle-social {
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    margin: 5px;
-    /* Bootstrap override colors */
     --bs-btn-active-bg: var(--ae-btn-active-bg-icon);
     --bs-btn-active-border-color: var(--ae-no-color);
     --bs-btn-active-color: var(--ae-btn-active-color-icon);
@@ -278,14 +269,19 @@
     --bs-btn-hover-bg: var(--ae-btn-hover-bg-icon);
     --bs-btn-hover-border-color: var(--ae-no-color);
     --bs-btn-hover-color: var(--ae-btn-hover-color-icon);
+    /* Bootstrap override colors */
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    font-size: 16px;
+    height: 28px;
+    justify-content: center;
+    margin: 5px;
+    width: 28px;
   }
   
   /* Close button in modals */
   .btn-close-modal {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    /* Bootstrap override colors */
     --bs-btn-active-bg: var(--ae-no-color);
     --bs-btn-active-border-color: var(--ae-no-color);
     --bs-btn-active-color: var(--ae-white);
@@ -300,6 +296,10 @@
     --bs-btn-hover-bg: var(--ae-no-color);
     --bs-btn-hover-border-color: var(--ae-no-color);
     --bs-btn-hover-color: var(--ae-white);
+    /* Bootstrap override colors */
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   
   /* Sticky button whatsapp */
@@ -1756,8 +1756,8 @@
   
   .course-heroe {
     background-color: var(--ae-black);
-    color: var(--ae-white);
     box-sizing: border-box;
+    color: var(--ae-white);
     position: relative;
   }
   .course-heroe-bg-desktop {
@@ -1779,47 +1779,61 @@
     }
   }
   .course-heroe-info {
-    position: relative;
-    width: 100%;
+    align-items: center;
+    display: flex;
     height: 100%;
     left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
     padding: 30px 0;
+    position: relative;
+    top: 0;
+    width: 100%;
   }
   @media (min-width: 992px) {
     .course-heroe-info {
       position: absolute;
     }
   }
-  .course-heroe-info .curso-heroe-data-cta {
+  .course-heroe-info .course-heroe-heading img {
+    display: none;
+    max-width: 260px;
+  }
+  @media (min-width: 992px) {
+    .course-heroe-info .course-heroe-heading img {
+      display: block;
+    }
+  }
+  @media (min-width: 992px) {
+    .course-heroe-info .course-heroe-data {
+      border-left: 1px solid var(--ae-primary);
+    }
+  }
+  .course-heroe-info .course-heroe-data-cta {
     display: flex;
     justify-content: center;
   }
   @media (min-width: 992px) {
-    .course-heroe-info .curso-heroe-data-cta {
+    .course-heroe-info .course-heroe-data-cta {
       justify-content: flex-start;
     }
   }
-  .course-heroe-info .curso-heroe-data-cta .btn {
+  .course-heroe-info .course-heroe-data-cta .btn {
     min-width: 171px;
   }
   @media (min-width: 992px) {
-    .course-heroe-info .curso-heroe-data-cta .btn {
+    .course-heroe-info .course-heroe-data-cta .btn {
       min-width: initial;
     }
   }
   
   .course {
-    padding: 30px 0;
     box-sizing: border-box;
+    padding: 30px 0;
   }
   .course-content .course-topics-items {
     color: var(--ae-orange);
+    left: 20px;
     list-style: disc;
     position: relative;
-    left: 20px;
   }
   .course-content .course-topics-items-item p {
     color: var(--ae-black);
@@ -1827,9 +1841,9 @@
   
   .course-makeYourWay {
     background-color: var(--ae-black);
-    padding: 30px 0;
     box-sizing: border-box;
     color: var(--ae-white);
+    padding: 30px 0;
   }
   .course-makeYourWay-title {
     text-align: center;
@@ -1840,19 +1854,19 @@
     }
   }
   .course-makeYourWay-description {
-    text-align: center;
     margin-bottom: 30px;
+    text-align: center;
   }
   @media (min-width: 992px) {
     .course-makeYourWay-description {
-      text-align: left;
       margin-bottom: initial;
+      text-align: left;
     }
   }
   .course-makeYourWay-description .btn-plus {
     cursor: none;
-    pointer-events: none;
     display: inline-block;
     margin: 0 10px;
+    pointer-events: none;
   }
   
