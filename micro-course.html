@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================================== -->
+  <!-- ============================ Bootstrap 5.2 =================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- =============================== Font awewome ================================= -->
+  <script src="https://kit.fontawesome.com/acadbfb405.js" crossorigin="anonymous"></script>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================= Ubuntu font ================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================= Flickity =================================== -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <title>Diplomados Anáhuac</title>
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <div class="container header-content">
+          <div class="header-branding">
+            <a class="navbar-brand" href="/">
+              <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex navbar-search" role="search">
+              <button for="" class="btn btn-search">
+                <img src="assets/image/shared/icons/icon-search.svg" alt="Search icon">
+              </button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Todos los cursos</a></li>
+                  <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
+                  <li><a class="dropdown-item" href="#">Inversión</a></li>
+                  <li><a class="dropdown-item" href="#">BBVA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Te puede interesar
+                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
+                  <li><a class="dropdown-item" href="#">Podcast</a></li>
+                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
+                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
+                </ul>
+              </li>
+              <li class="nav-item btn-login">
+                <button class="btn btn-info btn-sm btn-custom" >Iniciar sesión</button>
+              </li>
+              <li class="nav-item btn-register">
+                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">Regístrate</button>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn btn-shopping-cart">
+                  <img src="assets/image/shared/icons/icon-shopping-cart.svg" alt="Shopping cart icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="course-heroe">
+    <img class="course-heroe-bg-desktop" src="assets/image/courses/heroe-bg.png" alt="Cursos background">
+    <img class="course-heroe-bg-responsive" src="assets/image/courses/heroe-bg-responsive.png" alt="Cursos background">
+    <div class="container-fluid course-heroe-info">
+      <div class="container course-heroe-heading">
+        <img class="mb-5" src="assets/image/courses/course-anahuac-logo.png" alt="Anahuac Logo">
+        <p class="course-heroe-subtitle fw-light fs-4">DIPLOMADO <span class="fw-bold">Administración Financiera</span></p>
+        <p class="course-heroe-title text-orange fs-1 fw-bold">1. Microcurso</p>
+        <div class="row">
+          <div class="col-sm-12 col-lg-7">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <p>
+                  Los microcursos son cursos cortos en línea con una línea de desarrollo basada en metodologías de microaprendizaje. Constan de 10 a 20 horas instruccionales y son de modalidad asíncrona, es decir, podrás consumir los contenidos a tu propio ritmo en donde sea y utilizando cualquier dispositivo, ya sea desde una computadora, hasta un smartphone.
+                </p>
+              </div>
+              <div class="course-heroe-data col-sm-12 col-lg-6">
+                <div class="course-heroe-data-init">
+                  <p class="text-orange">MODALIDAD: </p>
+                  <p>Asíncrona</p>
+                </div>
+                <div class="course-heroe-data-lenght">
+                  <p class="text-orange">NÚMERO DE HORAS: </p>
+                  <p>10-20 horas</p>
+                </div>
+                <div class="d-lg-none mt-2">
+                  <p class="text-orange">MODULOS: </p>
+                  <p>curso <span class="text-orange">+</span> Módulo <span class="text-orange">+</span> MOOC <span class="text-orange">+</span> Master Class</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid course">
+    <div class="container">
+      <div class="course-content">
+        <nav class="course-nav">
+          <ul class="course-nav-items fw-light">
+            <li class="course-nav-items-item">
+              <a href="#" class="fw-bold"><span>1. </span>  Microcurso</a>
+            </li>
+            <li class="course-nav-items-item">
+              <a href="#">Módulo</a>
+            </li>
+            <li class="course-nav-items-item">
+              <a href="#">MOOC</a>
+            </li>
+            <li class="course-nav-items-item">
+              <a href="#">Master Class</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="course-instruction">
+          <p><span class="fw-bold fs-3">Ruta de aprendizaje</span></p>
+          <p><span class="fw-bold">Selecciona </span> uno a la vez y da clic en el botón <i class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Plus button"></i> para ir formando tu diplomado</p>
+        </div>
+        <div class="microCourse-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+          <div class="microCourse-carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                <div class="microCourse-item">
+                  <img src="assets/image/micro-courses/01img.png" alt="Microcurso image">
+                  <div class="microCourse-item-info">
+                    <p class="fw-bold">Estrategia y modelo de negocio.</p>
+                    <p><img src="assets/image/shared/icons/icon-clock.svg" alt="Clock icon"><span>15-20 horas</span></p>
+                  </div>
+                  <button class="btn btn-plus">
+                    <img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Agregar modulo">
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="microCourse-item">
+                  <img src="assets/image/micro-courses/02img.png" alt="Microcurso image">
+                  <div class="microCourse-item-info">
+                    <p class="fw-bold">Gestión de capital humano.</p>
+                    <p><img src="assets/image/shared/icons/icon-clock.svg" alt="Clock icon"><span>15-20 horas</span></p>
+                  </div>
+                  <button class="btn btn-plus">
+                    <img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Agregar modulo">
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="microCourse-item">
+                  <img src="assets/image/micro-courses/03img.png" alt="Microcurso image">
+                  <div class="microCourse-item-info">
+                    <p class="fw-bold">Problemas, decisiones y datos.</p>
+                    <p><img src="assets/image/shared/icons/icon-clock.svg" alt="Clock icon"><span>15-20 horas</span></p>
+                  </div>
+                  <button class="btn btn-plus">
+                    <img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Agregar modulo">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                <div class="microCourse-item">
+                  <img src="assets/image/micro-courses/04img.png" alt="Microcurso image">
+                  <div class="microCourse-item-info">
+                    <p class="fw-bold">Administración financiera básica.</p>
+                    <p><img src="assets/image/shared/icons/icon-clock.svg" alt="Clock icon"><span>15-20 horas</span></p>
+                  </div>
+                  <button class="btn btn-plus">
+                    <img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Agregar modulo">
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="microCourse-item">
+                  <img src="assets/image/micro-courses/05img.png" alt="Microcurso image">
+                  <div class="microCourse-item-info">
+                    <p class="fw-bold">Administración financiera intermedia.</p>
+                    <p><img src="assets/image/shared/icons/icon-clock.svg" alt="Clock icon"><span>15-20 horas</span></p>
+                  </div>
+                  <button class="btn btn-plus">
+                    <img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Agregar modulo">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid suscriptor">
+    <div class="container suscriptor-content">
+      <div class="suscriptor-cta">
+        <p class="fw-bold fs-2">¿Eres suscriptor?</p>
+        <p>
+          Obtén grandes beneficios al adquirir cualquier curso.
+        </p>
+      </div>
+      <img class="devices-picture-desktop" src="assets/image/shared/suscriptor/suscriptor-devices.svg" alt="Devices picture">
+      <img class="devices-picture-responsive" src="assets/image/shared/suscriptor/suscriptor-devices-responsive.svg" alt="Devices picture">
+    </div>
+  </section>
+
+  <footer class="container-fluid bg-dark">
+    <div class="container footer-content grid">
+      <div class="footer-economista-logo">
+        <img src="assets/image/shared/footer/eonomista-logo.svg" alt="El Economista">
+      </div>
+      <div class="copyright">
+        <p>Copyright 1988-2015 Periódico El Economista S.A. de C.V.</p>
+        <p>All Rights Reserved. Derechos Reservados <a href="#"> Aviso de Privacidad </a> <a href="#">Políticas de cancelación</a></p>
+      </div>
+      <div class="social-network">
+        <p class="fw-bold"><span class="text-warning">Seguir</span> El economista</p>
+        <div class="social-network-options">
+          <a href="" class="btn btn-circle-social"><i class="fab fa-twitter"></i></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact-title">
+          <p class="text-warning text-center fw-bold">Tienes duda contáctanos</p>
+        </div>
+        <div class="contact-phone">
+          <img src="assets/image/shared/footer/footer-icon-phone.svg" alt="Contact by phone">
+          <p>Llámanos</p>
+          <p>55 5237 0766</p>
+        </div>
+        <div class="contact-email">
+          <img src="assets/image/shared/footer/footer-icon-mail.svg" alt="Contact by email">
+          <p>Correo</p>
+          <p>contacto@eleconomista.mx</p>
+        </div>
+        <div class="contact-whatsapp">
+          <img src="assets/image/shared/footer/footer-icon-whatsapp.svg" alt="Contact by whatsapp">
+          <p>whatsapp</p>
+          <p>55 5237 0766</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================================== -->
+  <!-- ================================ Modal sing in =============================== -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza educativa">
+          <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body modal-register">
+          <div class="modal-register-cover">We need the image</div>
+          <div class="modal-register-content">
+            <p class="fs-3 fw-bold">Regístrate</p>
+            <p><span class="fs-3">Datos el usuario</span> <small class="">(para crear una cuenta)</small> </p>
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Nombre completo">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="tel" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col input-group">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="passwordField">
+                  <button class="btn btn-outline-secondary" type="button" id="showPassword">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" disabled>Crear cuenta</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="modal-register-content-footer">
+              <p>¿Ya tienes cuenta? <a href="#" class="text-primary">Entrar</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================ Whatsapps =================================== -->
+
+  <button class="btn btn-whatsapp-sticky">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+
+  <!-- ================================================================================ -->
+  <!-- ============================= Popper 2.11 ====================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <!-- ================================================================================ -->
+  <!-- ================================================================================ -->
+
+  <!-- ================================================================================ -->
+  <!-- =============================Bootstarp 5.2 ===================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <!-- ================================================================================ -->
+  <!-- ================================================================================ -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================= Flickity =================================== -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- ================================================================================ -->
+  <!-- ================================================================================ -->
+<script defer src="main.js"></script></body>
+</html>
