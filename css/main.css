@@ -1985,7 +1985,6 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 
 /* Paginas internas del curso */
 .course-content-internal {
-  padding: 30px 0;
   box-sizing: border-box;
 }
 @media (min-width: 992px) {
@@ -1995,6 +1994,63 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   .course-content-internal-info > div:last-of-type {
     border-right: 0;
   }
+}
+
+/* Paginas sin video curso interno */
+.course-module-heroe {
+  position: relative;
+}
+.course-module-heroe .course-module-img-desktop {
+  display: none;
+}
+@media (min-width: 992px) {
+  .course-module-heroe .course-module-img-desktop {
+    display: block;
+    width: 100%;
+  }
+}
+.course-module-heroe .course-module-img-responsive {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .course-module-heroe .course-module-img-responsive {
+    display: none;
+  }
+}
+
+.course-module-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: var(--ae-white);
+  background-color: var(--ae-black);
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .course-module-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    margin-top: inherit;
+  }
+}
+.course-module-content-info {
+  background-color: var(--ae-black);
+  padding: 20px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .course-module-content-info {
+    background-color: transparent;
+  }
+}
+.course-module-content-info > img {
+  width: 200px;
+}
+.course-module-content-info p:first-of-type {
+  margin-top: 50px;
 }
 
 /* Microcursos */
@@ -2106,51 +2162,110 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 
 /* Microcursos contenido */
-.microCourse-heroe {
-  background-color: var(--ae-black);
-  box-sizing: border-box;
+.micro-course-heroe {
   color: var(--ae-white);
-  position: relative;
-}
-.microCourse-heroe-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.microCourse-heroe-content .microCourse-info {
-  grid-column: 1/3;
-  grid-row: 2/3;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
-  .microCourse-heroe-content .microCourse-info {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  .micro-course-heroe {
+    background-color: var(--ae-black);
   }
 }
-.microCourse-heroe-content .microCourse-info img {
-  display: none;
+.micro-course-content {
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 992px) {
-  .microCourse-heroe-content .microCourse-info img {
+  .micro-course-content {
+    flex-direction: row;
+  }
+}
+.micro-course-heading {
+  width: 100%;
+  order: 2;
+  background-color: var(--ae-black);
+  margin-top: 30px;
+  position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.micro-course-heading::before, .micro-course-heading::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-color: var(--ae-black);
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .micro-course-heading::before, .micro-course-heading::after {
+    display: none;
+  }
+}
+.micro-course-heading::before {
+  left: -100%;
+}
+.micro-course-heading::after {
+  right: -100%;
+}
+@media (min-width: 992px) {
+  .micro-course-heading {
+    margin-top: initial;
+    order: initial;
+    padding: initial;
+  }
+}
+.micro-course-heading img {
+  display: none;
+  max-width: 200px;
+}
+@media (min-width: 992px) {
+  .micro-course-heading img {
     display: block;
   }
 }
-.microCourse-heroe-content .microCourse-video {
-  grid-column: 1/3;
+.micro-course-heading p:first-of-type {
+  margin-top: 0;
 }
 @media (min-width: 992px) {
-  .microCourse-heroe-content .microCourse-video {
-    grid-column: 2/3;
+  .micro-course-heading p:first-of-type {
+    margin-top: 30px;
   }
 }
-.microCourse-heroe-content .microCourse-video video {
+.micro-course-video {
   width: 100%;
+  background-color: var(--ae-black);
+  position: relative;
+}
+.micro-course-video::before, .micro-course-video::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-color: var(--ae-black);
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .micro-course-video::before, .micro-course-video::after {
+    display: none;
+  }
+}
+.micro-course-video::before {
+  left: -100%;
+}
+.micro-course-video::after {
+  right: -100%;
+}
+.micro-course-video video {
   display: block;
+  width: 100%;
 }
 
 /* Cursos nav */
 .course-nav {
   position: relative;
-  margin: 30px 0;
   font-size: 0.7rem;
 }
 @media (min-width: 576px) {
@@ -2189,6 +2304,9 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 .course-nav-items-item.active {
   background-color: var(--ae-black);
+}
+.course-nav-items-item.active::before {
+  display: none;
 }
 .course-nav-items-item.active a {
   color: var(--ae-orange);

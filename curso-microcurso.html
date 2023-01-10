@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================================== -->
+  <!-- ============================ Bootstrap 5.2 =================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- =============================== Font awewome ================================= -->
+  <script src="https://kit.fontawesome.com/acadbfb405.js" crossorigin="anonymous"></script>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================= Ubuntu font ================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================= Flickity =================================== -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <title>Diplomados Anáhuac</title>
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <div class="container header-content">
+          <div class="header-branding">
+            <a class="navbar-brand" href="/">
+              <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex navbar-search" role="search">
+              <button for="" class="btn btn-search">
+                <img src="assets/image/shared/icons/icon-search.svg" alt="Search icon">
+              </button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Todos los cursos</a></li>
+                  <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
+                  <li><a class="dropdown-item" href="#">Inversión</a></li>
+                  <li><a class="dropdown-item" href="#">BBVA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Te puede interesar
+                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
+                  <li><a class="dropdown-item" href="#">Podcast</a></li>
+                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
+                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
+                </ul>
+              </li>
+              <li class="nav-item btn-login">
+                <button class="btn btn-info btn-sm btn-custom" >Iniciar sesión</button>
+              </li>
+              <li class="nav-item btn-register">
+                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">Regístrate</button>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn btn-shopping-cart">
+                  <img src="assets/image/shared/icons/icon-shopping-cart.svg" alt="Shopping cart icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="micro-course-heroe">
+    <div class="container micro-course-content">
+      <div class="micro-course-heading">
+        <img src="assets/image/micro-courses/anahuac-online.png" alt="Anáhuac online logo">
+        <p class="fw-light fs-3">1. Microcurso</p>
+        <p class="fw-bold fs-1">Administración financiera intermedia</p>
+      </div>
+      <div class="micro-course-video">
+        <video src="https://2050today.org/wp-content/uploads/2020/07/Video-Placeholder.mp4?_=1" controls>
+          <source type="video/mp4" src="https://2050today.org/wp-content/uploads/2020/07/Video-Placeholder.mp4?_=1">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="course">
+    <div class="container">
+      <div class="course-content">
+        <div class="course-content-internal">
+          <div class="row">
+            <div class="col-sm-12 col-lg-9">
+              <nav class="course-nav internal">
+                <ul class="course-nav-items fw-light">
+                  <li class="course-nav-items-item active">
+                    <a href="#" class="fw-bold"><span>1. </span> Microcurso</a>
+                  </li>
+                  <li class="course-nav-items-item">
+                    <a href="#">Módulo</a>
+                  </li>
+                  <li class="course-nav-items-item">
+                    <a href="#">MOOC</a>
+                  </li>
+                  <li class="course-nav-items-item">
+                    <a href="#">Master Class</a>
+                  </li>
+                </ul>
+              </nav>
+              <p>
+                Las empresas se mueven en mercados competitivos por lo que requieren de talento humano preparado para enfrentar los retos comerciales de manera profesional. Sabiendo esa necesidad de profesionales preparados, hemos diseñado este curso el cual es fundamental para afianzar e incrementar tu potencial con herramientas para resolver situaciones propias del área de finanzas.
+                El que tú hayas llegado a este curso de “**Administración Financiera Intermedia**” implica que ya tienes una base en la comprensión del tema y con este curso intermedio podrás tener un conocimiento más profundo que te otorgará ventajas como: la entrega de herramientas para **formar tu propia empresa**; si ya eres empleado te convierte en un **profesional clave en la empres**a; sino eres empleado aun, mejorará tus **oportunidades laborales** y por otra parte, te dará una **mayor perspectiva** al momento de realizar cualquier **proyecto de negocio**.
+              </p>
+
+              <div class="row mt-3 course-content-internal-info">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="course-index">
+                    <div class="course-index-title">
+                      <img src="assets/image/shared/icons/icon-arrow-down-blue.svg" alt="Arrow blue icon">
+                      <span class="fw-bold fs-6">Unidades temáticas</span>
+                    </div>
+                    <ul class="course-index-items">
+                      <li class="course-index-items-item">
+                        <p>1. Planeación financiera.</p>
+                      </li>
+                      <li class="course-index-items-item">
+                        <p>2. Análisis financiero.</p>
+                      </li>
+                      <li class="course-index-items-item">
+                        <p>3. Elaboración de presupuestos.</p>
+                      </li>
+                      <li class="course-index-items-item">
+                        <p>4. Comparación de proyectos y ratios financieros.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                  <div class="course-badge">
+                    <p class="course-badge-title fw-bold fs-5"> Nuestro Badge </p>
+                    <div class="row">
+                      <div class="col-sm-4 col-lg-12">
+                        <img src="assets/image/micro-courses/badge-logo.svg" alt="Badge Logo">
+                      </div>
+                      <div class="col-sm-4 col-lg-12">
+                        <p>
+                          Al juntar todos estos elementos se genera un diplomado avalado por <span class="fw-bold">Anahuac con su cadena de Blockchain con un nombre general autorizado por Anáhuac.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                  <div class="course-experts">
+                    <p class="course-experts-title fw-bold fs-5">Nuestros expertos</p>
+                    <img src="assets/image/micro-courses/expert-profile.jpg" alt="Expert profile picture">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-2">
+                        <p>Seguir</p>
+                        <a href="#">
+                          <img src="assets/image/shared/icons/icon-linkedin.svg" alt="Linkedin">
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-lg-10">
+                        <p class="fw-bold mt-2">Carlo Galarza Pagani</p>
+                        <small class="fw-light">Mtro. Dirección y Administración de Empresas y Lic. Finanzas y en Administración de Empresas</small>
+                        <p class="mt-3">
+                          Mtro. Carlo Galarza Pagani. Con formación profesional en Finanzas y Administración de Empresas. Especialidad en Finanzas Corporativas, Administración de Empresas y Fintech. Maestría en Dirección y Organización de Empresas. Maestría en Administración de Empresas. Experiencia laboral en desarrollo e implementación de proyectos internacionales (Ecuador, Qatar, E.A.U.) dirección financiera de diferentes empresas e industrias. Actualmente, Vicepresidente Financiero de Asociación de Gestión de Datos DAMA.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm-12 col-lg-3">
+              <div class="card course-details">
+                <p class="course-details-title fs-5 fw-bold">Detalles</p>
+                <div class="course-details-item">
+                  <img src="assets/image/shared/icons/icon-clock-black.svg" alt="">
+                  <div class="course-details-item-info">
+                    <p class="text-orange">Duración: </p>
+                    <p class="fw-bold">15 - 20 horas</p>
+                  </div>
+                </div>
+                <div class="course-details-item">
+                  <img src="assets/image/shared/icons/icon-graduation-cap.svg" alt="">
+                  <div class="course-details-item-info">
+                    <p class="text-orange">AVALA: </p>
+                    <p class="fw-bold">Universidad Anáhuac</p>
+                  </div>
+                </div>
+                <div class="course-details-item">
+                  <img src="assets/image/shared/icons/icon-user-line.svg" alt="">
+                  <div class="course-details-item-info">
+                    <p class="text-orange">modalidad: </p>
+                    <p> <span class="fw-bold">Asíncrona:</span> A tú propio ritmo</p>
+                  </div>
+                </div>
+                <div class="course-details-item">
+                  <a href="#" class="btn btn-primary d-block">+ AÑADIR AL CARRITO</a>
+                  <a href="#" class="btn btn-info btn-share d-block">COMPARTIR</a>
+                </div>
+              </div>
+              <small class="d-sm-none d-lg-block mt-3">Una vez adquirido tendrá 6 meses para realizar el contenido del micro curso. </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-related">
+    <img src="assets/image/micro-courses/related-courses-bg.jpg" alt="Bg">
+    <div class="container">
+      <p class="courses-related-title fw-bold fs-5">4 Microcursos que también puedes elegir</p>
+      <div class="courses-related-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": true }'>
+        <div class="courses-related-carousel-item">
+          <div class="course-related-card">
+            <div class="course-related-card-button">
+              <a href="#" class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Button plus"></a>
+            </div>
+            <div class="course-related-card-body">
+              <p> Administración financiera básica. </p>
+            </div>
+          </div>
+        </div>
+        <div class="courses-related-carousel-item">
+          <div class="course-related-card">
+            <div class="course-related-card-button">
+              <a href="#" class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Button plus"></a>
+            </div>
+            <div class="course-related-card-body">
+              <p> Administración financiera básica. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid suscriptor">
+    <div class="container suscriptor-content">
+      <div class="suscriptor-cta">
+        <p class="fw-bold fs-2">¿Eres suscriptor?</p>
+        <p>
+          Obtén grandes beneficios al adquirir cualquier curso.
+        </p>
+      </div>
+      <img class="devices-picture-desktop" src="assets/image/shared/suscriptor/suscriptor-devices.svg" alt="Devices picture">
+      <img class="devices-picture-responsive" src="assets/image/shared/suscriptor/suscriptor-devices-responsive.svg" alt="Devices picture">
+    </div>
+  </section>
+
+  <footer class="container-fluid bg-dark">
+    <div class="container footer-content grid">
+      <div class="footer-economista-logo">
+        <img src="assets/image/shared/footer/eonomista-logo.svg" alt="El Economista">
+      </div>
+      <div class="copyright">
+        <p>Copyright 1988-2015 Periódico El Economista S.A. de C.V.</p>
+        <p>All Rights Reserved. Derechos Reservados <a href="#"> Aviso de Privacidad </a> <a href="#">Políticas de cancelación</a></p>
+      </div>
+      <div class="social-network">
+        <p class="fw-bold"><span class="text-warning">Seguir</span> El economista</p>
+        <div class="social-network-options">
+          <a href="" class="btn btn-circle-social"><i class="fab fa-twitter"></i></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact-title">
+          <p class="text-warning text-center fw-bold">Tienes duda contáctanos</p>
+        </div>
+        <div class="contact-phone">
+          <img src="assets/image/shared/footer/footer-icon-phone.svg" alt="Contact by phone">
+          <p>Llámanos</p>
+          <p>55 5237 0766</p>
+        </div>
+        <div class="contact-email">
+          <img src="assets/image/shared/footer/footer-icon-mail.svg" alt="Contact by email">
+          <p>Correo</p>
+          <p>contacto@eleconomista.mx</p>
+        </div>
+        <div class="contact-whatsapp">
+          <img src="assets/image/shared/footer/footer-icon-whatsapp.svg" alt="Contact by whatsapp">
+          <p>whatsapp</p>
+          <p>55 5237 0766</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================================== -->
+  <!-- ================================ Modal sing in =============================== -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza educativa">
+          <button type="button" class="btn btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body modal-register">
+          <div class="modal-register-cover">We need the image</div>
+          <div class="modal-register-content">
+            <p class="fs-3 fw-bold">Regístrate</p>
+            <p><span class="fs-3">Datos el usuario</span> <small class="">(para crear una cuenta)</small> </p>
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Nombre completo">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="tel" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col input-group">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="passwordField">
+                  <button class="btn btn-outline-secondary" type="button" id="showPassword">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" disabled>Crear cuenta</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="modal-register-content-footer">
+              <p>¿Ya tienes cuenta? <a href="#" class="text-primary">Entrar</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================ Whatsapps =================================== -->
+
+  <button class="btn btn-whatsapp-sticky">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+
+  <!-- ================================================================================ -->
+  <!-- ============================= Popper 2.11 ====================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <!-- ================================================================================ -->
+  <!-- ================================================================================ -->
+
+  <!-- ================================================================================ -->
+  <!-- =============================Bootstarp 5.2 ===================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <!-- ================================================================================ -->
+  <!-- ================================================================================ -->
+
+  <!-- ============================================================================== -->
+  <!-- ================================= Flickity =================================== -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- ================================================================================ -->
+  <!-- ================================================================================ -->
+<script defer src="main.js"></script></body>
+</html>
