@@ -420,16 +420,20 @@ body {
 .course-related-card {
   background-color: var(--ae-black);
   color: var(--ae-white);
-  max-width: 220px;
+  width: 220px;
   height: 190px;
   padding: 15px;
   box-sizing: border-box;
   border-radius: 10px;
   margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .course-related-card-button {
-  display: flex;
+  display: none;
   justify-content: flex-end;
+  margin-bottom: 30px;
 }
 .course-related-card-button > .btn-plus > img {
   width: 100%;
@@ -948,6 +952,41 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   footer .footer-content .contact-email {
     border-left: 1px solid rgb(112, 112, 112);
     border-right: 1px solid rgb(112, 112, 112);
+  }
+}
+
+.flickity-prev-next-button {
+  display: none;
+}
+@media (min-width: 992px) {
+  .flickity-prev-next-button {
+    display: block;
+  }
+}
+
+.flickity-page-dots {
+  bottom: initial;
+  position: relative;
+  margin-top: 30px;
+}
+.flickity-page-dots .dot {
+  background: var(--ae-white);
+  border-radius: 6px;
+  border: 1px solid var(--ae-primary);
+  height: 20px;
+  width: 80px;
+}
+.flickity-page-dots .dot.is-selected {
+  background: var(--ae-primary);
+}
+
+/* Estilos para carrusel de cursos */
+.courses-related .flickity-page-dots {
+  display: none;
+}
+@media (min-width: 992px) {
+  .courses-related .flickity-page-dots {
+    display: block;
   }
 }
 
@@ -2000,6 +2039,13 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 .course-module-heroe {
   position: relative;
 }
+@media (min-width: 992px) {
+  .course-module-heroe {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+  }
+}
 .course-module-heroe .course-module-img-desktop {
   display: none;
 }
@@ -2007,6 +2053,10 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   .course-module-heroe .course-module-img-desktop {
     display: block;
     width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: -1;
+    height: 100%;
   }
 }
 .course-module-heroe .course-module-img-responsive {
@@ -2019,6 +2069,8 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 
 .course-module-content {
+  grid-column: 1/2;
+  grid-row: 2/3;
   position: relative;
   width: 100%;
   height: 100%;
@@ -2028,11 +2080,9 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 @media (min-width: 992px) {
   .course-module-content {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: transparent;
     margin-top: inherit;
+    grid-row: 1/2;
   }
 }
 .course-module-content-info {
@@ -2049,8 +2099,10 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 .course-module-content-info > img {
   width: 200px;
 }
-.course-module-content-info p:first-of-type {
-  margin-top: 50px;
+@media (min-width: 992px) {
+  .course-module-content-info p:first-of-type {
+    margin-top: 50px;
+  }
 }
 
 /* Microcursos */
@@ -2059,28 +2111,6 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
 }
 .microCourse-carousel-item .row {
   margin: 20px 0;
-}
-.microCourse-carousel .flickity-prev-next-button {
-  display: none;
-}
-@media (min-width: 992px) {
-  .microCourse-carousel .flickity-prev-next-button {
-    display: block;
-  }
-}
-.microCourse-carousel .flickity-page-dots {
-  bottom: initial;
-  position: relative;
-}
-.microCourse-carousel .flickity-page-dots .dot {
-  background: var(--ae-white);
-  border-radius: 6px;
-  border: 1px solid var(--ae-primary);
-  height: 20px;
-  width: 80px;
-}
-.microCourse-carousel .flickity-page-dots .dot.is-selected {
-  background: var(--ae-primary);
 }
 
 /* Microcursos miniaturas */
@@ -2159,6 +2189,7 @@ footer .footer-content .contact-phone img, footer .footer-content .contact-email
   position: absolute;
   right: 10px;
   z-index: 2;
+  display: none;
 }
 
 /* Microcursos contenido */
