@@ -11,18 +11,18 @@
   <!-- ============================================================================== -->
 
   <!-- ============================================================================== -->
+  <!-- =============================== Font awewome ================================= -->
+  <script src="https://kit.fontawesome.com/acadbfb405.js" crossorigin="anonymous"></script>
+  <!-- ============================================================================== -->
+  <!-- ============================================================================== -->
+
+  <!-- ============================================================================== -->
   <!-- ================================= Ubuntu font ================================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- ============================================================================== -->
   <!-- ============================================================================== -->
 
-  <!-- ============================================================================== -->
-  <!-- ================================= Flickity =================================== -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <!-- ============================================================================== -->
-  <!-- ============================================================================== -->
-
-  <title>Alianza Anáhuac</title>
+  <title>Carrito compra</title>
 <link href="css/main.css" rel="stylesheet"></head>
 <body>
   <header>
@@ -80,6 +80,16 @@
                   <img src="assets/image/shared/icons/icon-shopping-cart.svg" alt="Shopping cart icon">
                 </a>
               </li>
+              <li class="nav-item dropdown dropdown-user">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/image/shared/icons/icon-user.svg" alt="">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mis datos</a></li>
+                  <li><a class="dropdown-item" href="#">Mis cursos</a></li>
+                  <li><a class="dropdown-item" href="#">Salir</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -87,117 +97,156 @@
     </nav>
   </header>
 
-  <section class="heroe">
-    <img class="heroe-bg-desktop" src="assets/image/home/heroe-image-desktop.png" alt="Alianza educativa hero">
-    <img class="heroe-bg-responsive" src="assets/image/home/heroe-image-responsive.png" alt="Alianza educativa hero">
-    <div class="container-fluid heroe-cta">
-      <div class="container heroe-cta-content">
-        <img class="heroe-cta-content-branding" src="assets/image/shared/header/alianza-logo.svg" alt="Alianza educativa">
-        <div class="heroe-cta-content-body">
-          <div class="heroe-cta-content-title fw-bold">
-            <p>Conocimiento para</p>
-            <p>todos, en las mejores</p>
-            <p class="text-primary">universidades y empresas</p>
+  <section class="mt-5">
+    <div class="container dashboard">
+      <div class="row">
+        <div class="col-sm-12 col-lg-9 dashboard-heading">
+          <p class="fw-bold fs-2 mb-4">Mis cursos</p>
+          <img src="assets/image/shared/header/anahuac-online-cart.svg" alt="Anahuac online">
+
+          <div class="dashboard-info">
+            <div>
+              <p class="fw-light">DIPLOMADO</p>
+              <p class="fw-bold fs-1">Administración financiera</p>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-lg-3">
+                <p> <span class="text-orange">1.</span> Microcurso</p>
+                <div class="cart-card">
+                  <div class="cart-card-header">
+                    <a href="#" class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Plus icon"></a>
+                  </div>
+                  <div class="cart-card-body">
+                    <p>Gestión de capital humano</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-3">
+                <p> <span class="text-orange">2.</span> Módulo</p>
+                <div class="cart-card">
+                  <div class="cart-card-header">
+                    <a href="#" class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Plus icon"></a>
+                  </div>
+                  <div class="cart-card-body">
+                    <p>Análisis financieros de los proyectos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-3">
+                <p> <span class="text-orange">3.</span> MOOC</p>
+                <div class="cart-card">
+                  <div class="cart-card-header">
+                    <a href="#" class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Plus icon"></a>
+                  </div>
+                  <div class="cart-card-body">
+                    <p>Fundamentos de información financiera y contable</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-3">
+                <p> <span class="text-orange">4.</span> Master Class</p>
+                <div class="cart-card">
+                  <div class="cart-card-header">
+                    <a href="#" class="btn btn-plus"><img src="assets/image/shared/icons/icon-btn-plus.svg" alt="Plus icon"></a>
+                  </div>
+                  <div class="cart-card-body">
+                    <p>Pendiente</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="heroe-cta-content-description">
-            <p>
-              Alianza Educativa es una sección que tiene como objetivo impulsar el conocimiento, habilidades y actitudes para fortalecer el interés por la educación de nuestros usuarios y suscriptores.
-            </p>
-            <p>
-              Aquí podrás encontrar cursos, diplomados impartidos por las mejores instituciones, que te lleven a cumplir tus objetivos de capacitación para esta nueva era de retos y oportunidades.
-            </p>
-          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3 dashboard-cost">
+          <p>Total <span class="fw-light">( 4 cursos )</span>: <span class="fw-bold">$0.00 MXN</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="heroe-color-bar">
-    <div class="message-bar">
-      <p class="fw-bold">Forma parte de nuestra comunidad y haz que tus ideas brillen</p>
-    </div>
-    <div class="color-grid">
-      <span class="color1"></span>
-      <span class="color2"></span>
-      <span class="color3"></span>
-      <span class="color4"></span>
-      <span class="color5"></span>
-      <span class="color6"></span>
-    </div>
-  </div>
-
-  <section class="container-fluid courses">
-    <div class="container courses-content">
-      <div class="courses-heading">
-        <p class="fs-2">Cursos Especializados</p>
-        <p>Empieza y descubre contenido cada mes, en las diferentes universidades e instituciones de prestigio.</p>
+  <section class="user-instructions mt-5">
+    <div class="container">
+      <div class="mb-4">
+        <p class="fs-3 fw-bold">Instrucciones para consumo de contenido  </p>
+        <p>Ya puedes comenzar tu diplomado, <span>{ Nombre }</span></p>
       </div>
-      <div class="courses-carousel" id="coursesCarousel">
-        <div class="courses-carousel-item">
-          <div class="card">
-            <img src="assets/image/home/courses/course-1.png" class="card-img-top" alt="Course 1">
-            <div class="card-heading">
-              <img src="assets/image/home/courses/anahuac-logo.png" alt="Logo Anahuac">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">DIPLOMADO</h5>
-              <p class="card-text">
-                A nuestra audiencia y suscriptores mediante la <span class="fw-bold">UNIVERSIDAD ANÁHUAC</span> cuyo prestigio la precede.
-              </p>
-            </div>
-            <div class="card-footing">
-              <div class="endorsed">
-                <small>Avalado por</small>
-                <p class="fw-bold">UNIVERSIDAD ANAHÚAC</p>
-              </div>
-              <a href="#" class="btn btn-primary">VER DIPLOMADO</a>
-            </div>
-          </div>
+      <div class="user-instructions-item">
+        <p class="user-instructions-item-heading"><span class="text-white">1.</span> Microcurso</p>
+        <p class="text-orange mt-4">Tiempo de respuesta</p>
+        <p>Podrás consumir tu Microcurso en un periodo de entre 2 a 4 horas después de confirmado tu pago y que se haya recibido satisfactoriamente la información.</p>
+
+        <div class="individual-instructions mt-3">
+          <p class="fw-bold">Instrucciones</p>
+          <p>Recibirás un correo electrónico de noreply@learnworlds.com</p>
+          <p><span class="fw-bold">Asunto: Bienvenido a Anáhuac Online</span> donde recibirás tu usuario (Correo electrónico registrado) y tu contraseña.</p>
+          <p>Posterior a ello deberá realizar los siguientes pasos:</p>
+
+          <ol class="mt-3">
+            <li>Ingresar al siguiente URL: https://powerlearning.anahuaconline.com/courses</li>
+            <li>Dar clic en el botón de la esquina superior derecha login.</li>
+            <li>Utilizar los datos de inicio de sesión contenidos en el correo electrónico.</li>
+            <li>Dar clic en comenzar el curso que se compró.</li>
+          </ol>
         </div>
-        <div class="courses-carousel-item">
-          <div class="card">
-            <img src="assets/image/home/courses/course-2.png" class="card-img-top" alt="Course 1">
-            <div class="card-heading">
-              <img src="assets/image/home/courses/bolsa-mex-valores-logo.png" alt="Bolsa Mexicana de Valores">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">CURSOS</h5>
-              <p class="card-text"> Que ayuden a nuestros lectores a obtener su certificación en la <span class="fw-bold">Bolsa Mexicana de Valores</span>. </p>
-            </div>
-            <div class="card-footing">
-              <div class="endorsed">
-                <small>Avalado por</small>
-                <p class="fw-bold">Bolsa Mexicana de Valores</p>
-              </div>
-              <a href="#" class="btn btn-primary">VER DIPLOMADO</a>
-            </div>
-          </div>
+      </div>
+      <div class="user-instructions-item">
+        <p class="user-instructions-item-heading"><span class="text-white">2.</span> Módulo</p>
+        <p class="text-orange mt-4">Tiempo de respuesta</p>
+        <p>La plataforma de consumo se apertura 1 día antes del inicio programado del módulo.</p>
+
+        <div class="individual-instructions mt-3">
+          <p class="fw-bold">Instrucciones</p>
+          <p>Previo a ello recibirás un correo con el enlace a la plataforma CANVAS así como su usuario y contraseña.</p>
+
+          <ol class="mt-3">
+            <li>Ingresar a la plataforma CANVAS https://uvanahuac.instructure.com/login</li>
+            <li>Iniciar sesión dentro de la plataforma con tu correo electrónico y contraseña proporcionados en el email de inicio de curso.</li>
+            <li>Dar clic en el nombre del módulo e iniciar el consumo de contenido.</li>
+          </ol>
         </div>
-        <div class="courses-carousel-item">
-          <div class="card">
-            <img src="assets/image/home/courses/course-3.png" class="card-img-top" alt="Course 1">
-            <div class="card-heading">
-              <img src="assets/image/home/courses/bbva-logo.png" alt="Logo Anahuac">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">CURSOS GRATUITOS</h5>
-              <!-- <p class="card-text"> Lo que necesitas para tú futuro, te espera aquí. <span class="fw-bold">BBVA.</span> </p> -->
-              <p class="card-text"> Que ayuden a nuestros lectores a obtener su certificación en la <span class="fw-bold">Bolsa Mexicana de Valores</span>. </p>
-            </div>
-            <div class="card-footing">
-              <div class="endorsed">
-                <small>Avalado por</small>
-                <p class="fw-bold">BBVA</p>
-              </div>
-              <a href="#" class="btn btn-primary">VER DIPLOMADO</a>
-            </div>
-          </div>
+      </div>
+      <div class="user-instructions-item">
+        <p class="user-instructions-item-heading"><span class="text-white">3.</span> MOOC's</p>
+        <p class="text-orange mt-4">Tiempo de respuesta</p>
+        <p>Podrá consumir tu MOOC en un periodo de entre 48 a 72 horas después de confirmado tu pago y que se haya recibido satisfactoriamente la información del estudiante.</p>
+
+        <div class="individual-instructions mt-3">
+          <p class="fw-bold">Instrucciones</p>
+          <p>
+            Recibirás un correo electrónico de no-reply@anahuaconline.com donde recibirás su código para redimir su curso en la plataforma de edX, así como el enlace directo al MOOC comprado.
+          </p>
+          <p>Posterior a ello deberá realizar los siguientes pasos: </p>
+
+          <ol class="mt-3">
+            <li>Crear una cuenta en la plataforma de edX <span class="fw-bold">www.edx.org</span></li>
+            <li>Ingresa al URL del MOOC proporcionado en el correo de bienvenida o confirmación de compra.</li>
+            <li>El usuario procede a colocar el programa en proceso de compra.</li>
+            <li>En la pantalla de check out aplica el cupón de descuento que debe eximir el 100% del costo del programa.</li>
+            <li>Dar clic en el nombre del MOOC e iniciar el consumo del contenido.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="user-instructions-item">
+        <p class="user-instructions-item-heading"><span class="text-white">4.</span> Master Class</p>
+        <p class="text-orange mt-4">Tiempo de respuesta</p>
+        <p>El usuario recibirá un correo electrónico con una semana de anticipación a la fecha programada de la Master Class.</p>
+
+        <div class="individual-instructions mt-3">
+          <p class="fw-bold">Instrucciones</p>
+
+          <ol class="mt-3">
+            <li>Llenar formulario de acceso a Campus</li>
+            <li>Recibir y guardar código QR para ingreso.</li>
+            <li>Ubicar edificio y salón en el que se llevará a cabo la Master Class.</li>
+            <li>Presentarse en uno de los accesos al campus con código QR.</li>
+            <li>Dirigirse a la ubicación del aula.</li>
+          </ol>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="economista-releated">
+  <section class="economista-releated mt-5">
     <div class="container-fluid">
       <div class="container economista-related-heading">
         <p class="fw-bold fs-3">Te puede interesar...</p>
@@ -227,42 +276,6 @@
     </div>
   </section>
 
-  <section class="container-fluid vision">
-    <div class="container vision-content">
-      <!-- TODO:Change this images with others with most quality -->
-      <img class="vision-img-1" src="assets/image/home/vision-image-1.jpg" alt="">
-      <img class="vision-img-2" src="assets/image/home/vision-image-2.jpg" alt="">
-      <!-- TODO:Change this images with others with most quality -->
-      <div>
-        <p>Nuestra visión</p>
-        <p>
-          Empresa impulsada por una misión, evolucionemos poco a poco en un mundo en el que cada alumno pueda obtener una educación y desarrollar su potencial, sin obstáculos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid partners shadow">
-    <div class="container partners-content">
-      <div>
-        <p class="fw-bold mb-3">Empresas líderes en México y en el mundo están aliadas con nosotros</p>
-        <ul class="partners-brands">
-          <li>
-            <img src="assets/image/shared/partners/anahuac.svg" alt="Anahuac logo">
-          </li>
-          <li>
-            <img src="assets/image/shared/partners/grupo-bmv.svg" alt="Anahuac logo">
-          </li>
-          <li>
-            <img src="assets/image/shared/partners/mexicana-de-becas.svg" alt="Anahuac logo">
-          </li>
-          <li>
-            <img src="assets/image/shared/partners/alsea.svg" alt="Anahuac logo">
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
   <section class="container-fluid suscriptor">
     <div class="container suscriptor-content">
@@ -289,9 +302,9 @@
       <div class="social-network">
         <p class="fw-bold"><span class="text-warning">Seguir</span> El economista</p>
         <div class="social-network-options">
-          <a href="" class="btn btn-circle-social"><img src="assets/image/shared/icons/icon-twitter.svg" alt="Twitter icon"></a>
-          <a href="" class="btn btn-circle-social"><img src="assets/image/shared/icons/icon-facebook.svg" alt="Facebook icon"></a>
-          <a href="" class="btn btn-circle-social"><img src="assets/image/shared/icons/icon-telegram.svg" alt="Telegram icon"></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-twitter"></i></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="btn btn-circle-social"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="contact">
@@ -386,7 +399,7 @@
   <!-- ================================ Whatsapps =================================== -->
 
   <button class="btn btn-whatsapp-sticky">
-    <img src="assets/image/shared/icons/icon-whatsapp.svg" alt="">
+    <i class="fa-brands fa-whatsapp"></i>
   </button>
 
   <!-- ================================================================================ -->
@@ -401,10 +414,5 @@
   <!-- ================================================================================ -->
   <!-- ================================================================================ -->
 
-  <!-- ============================================================================== -->
-  <!-- ================================= Flickity =================================== -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <!-- ================================================================================ -->
-  <!-- ================================================================================ -->
 <script defer src="main.js"></script></body>
 </html>
