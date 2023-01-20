@@ -1591,6 +1591,9 @@ body {
 .diplomado-content-info .diplomado-description-block input::after {
   content: "ver más";
 }
+.diplomado-content-info .diplomado-description-block input:checked::after {
+  content: "ver menos";
+}
 .diplomado-content-info .diplomado-description-block:has(input:checked) p {
   max-height: initial;
 }
@@ -2309,7 +2312,7 @@ body {
 }
 .micro-course-heading::before, .micro-course-heading::after {
   content: "";
-  width: 100%;
+  width: 200%;
   height: 100%;
   top: 0;
   position: absolute;
@@ -2322,10 +2325,10 @@ body {
   }
 }
 .micro-course-heading::before {
-  left: -100%;
+  left: 0%;
 }
 .micro-course-heading::after {
-  right: -100%;
+  right: 0%;
 }
 @media (min-width: 992px) {
   .micro-course-heading {
@@ -2358,7 +2361,7 @@ body {
 }
 .micro-course-video::before, .micro-course-video::after {
   content: "";
-  width: 100%;
+  width: 200%;
   height: 100%;
   top: 0;
   position: absolute;
@@ -2371,10 +2374,10 @@ body {
   }
 }
 .micro-course-video::before {
-  left: -100%;
+  left: 0%;
 }
 .micro-course-video::after {
-  right: -100%;
+  right: 0%;
 }
 .micro-course-video video {
   display: block;
@@ -2541,6 +2544,11 @@ body {
   .course-experts > img {
     margin-left: 80px;
   }
+}
+
+.expert-list-skills {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 /* Carrusel cursos relacionados */
