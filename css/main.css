@@ -449,10 +449,10 @@ body {
   margin: 0 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .course-related-card-button {
-  display: none;
+  display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
 }
@@ -2279,7 +2279,6 @@ body {
   position: absolute;
   right: 10px;
   z-index: 2;
-  display: none;
 }
 
 /* Microcursos contenido */
