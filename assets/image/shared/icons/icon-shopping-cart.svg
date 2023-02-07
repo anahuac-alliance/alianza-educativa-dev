@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="27.606" height="26.442" viewBox="0 0 27.606 26.442">
+<svg xmlns="http://www.w3.org/2000/svg" width="31.605" height="30.442" viewBox="0 0 31.605 30.442">
   <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(1 1)">
-    <path id="Path_895" data-name="Path 895" d="M14.328,31.164A1.164,1.164,0,1,1,13.164,30,1.164,1.164,0,0,1,14.328,31.164Z" transform="translate(-3.853 -7.886)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Path_896" data-name="Path 896" d="M30.828,31.164A1.164,1.164,0,1,1,29.664,30,1.164,1.164,0,0,1,30.828,31.164Z" transform="translate(-7.55 -7.886)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Path_897" data-name="Path 897" d="M1.5,1.5H6.156L9.275,17.085A2.328,2.328,0,0,0,11.6,18.958H22.916a2.328,2.328,0,0,0,2.328-1.874l1.862-9.765H7.319" transform="translate(-1.5 -1.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_895" data-name="Path 895" d="M14.328,31.164A1.164,1.164,0,1,1,13.164,30,1.164,1.164,0,0,1,14.328,31.164Z" transform="translate(-2.453 -3.886)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_896" data-name="Path 896" d="M30.828,31.164A1.164,1.164,0,1,1,29.664,30,1.164,1.164,0,0,1,30.828,31.164Z" transform="translate(-3.55 -3.886)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_897" data-name="Path 897" d="M1.5,1.5H6.883l3.607,19.155a2.735,2.735,0,0,0,2.691,2.3h13.08a2.735,2.735,0,0,0,2.691-2.3l2.153-12H8.229" transform="translate(-1.5 -1.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   </g>
 </svg>

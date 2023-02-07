@@ -189,6 +189,10 @@ body {
   --bs-btn-hover-color: var(--ae-btn-hover-color-search);
   --bs-btn-padding-x: 0rem;
 }
+.btn-search img {
+  width: 12px;
+  display: block;
+}
 
 /* Dropdown */
 .dropdown-toggle {
@@ -555,7 +559,7 @@ body {
 }
 @media (min-width: 992px) {
   .navbar-collapse .navbar-search {
-    width: initial;
+    width: 25%;
   }
 }
 .navbar-collapse .navbar-nav {
@@ -575,6 +579,48 @@ body {
     padding: 0px 10px;
   }
 }
+.navbar-collapse .navbar-nav .nav-item {
+  width: 100%;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link-icon {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link-icon .icon-notification {
+  width: 18px;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link-icon .icon-shopping-cart {
+  width: 22px;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link-icon .icon-user {
+  width: 24px;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link-icon .notification-label {
+  position: absolute;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: var(--bs-gray-700);
+  z-index: 5;
+  top: 0;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (min-width: 992px) {
+  .navbar-collapse .navbar-nav .nav-item .nav-link-icon .notification-label {
+    top: 0;
+    left: initial;
+    right: 0;
+  }
+}
+.navbar-collapse .navbar-nav .nav-item:last-of-type .dropdown-menu[data-bs-popper] {
+  right: 0;
+  left: initial;
+}
 .navbar-collapse .navbar-nav .btn-login,
 .navbar-collapse .navbar-nav .btn-register {
   align-items: center;
@@ -586,6 +632,18 @@ body {
   }
 }
 
+.dropdown-item {
+  color: var(--bs-dark);
+}
+.dropdown-item:hover {
+  color: var(--bs-primary);
+  background-color: transparent;
+}
+.dropdown-item span {
+  border-right: 1px solid var(--bs-warning);
+  padding-right: 5px;
+  box-sizing: border-box;
+}
 .dropdown-user a img {
   width: 28px;
 }
@@ -2719,7 +2777,7 @@ body {
 }
 
 .purchase-resume {
-  background-color: var(--ae-black);
+  background-color: var(--bs-gray-700);
   padding: 20px;
   box-sizing: border-box;
   color: var(--ae-white);

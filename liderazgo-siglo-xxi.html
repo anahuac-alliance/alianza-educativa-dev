@@ -32,65 +32,68 @@
 <link href="css/main.css" rel="stylesheet"></head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <div class="container header-content">
-          <div class="header-branding">
-            <a class="navbar-brand" href="/">
-              <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex navbar-search" role="search">
-              <button for="" class="btn btn-search">
-                <img src="assets/image/shared/icons/icon-search.svg" alt="Search icon">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div class="container header-content">
+            <div class="header-branding">
+              <a class="navbar-brand" href="/">
+                <img src="assets/image/shared/header/alianza-logo.svg" alt="Alianza Educativa">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cursos
-                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Todos los cursos</a></li>
-                  <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
-                  <li><a class="dropdown-item" href="#">Inversión</a></li>
-                  <li><a class="dropdown-item" href="#">BBVA</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Te puede interesar
-                  <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
-                  <li><a class="dropdown-item" href="#">Podcast</a></li>
-                  <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
-                  <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
-                </ul>
-              </li>
-              <li class="nav-item btn-login">
-                <button class="btn btn-info btn-sm btn-custom" >Iniciar sesión</button>
-              </li>
-              <li class="nav-item btn-register">
-                <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">Regístrate</button>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="btn btn-shopping-cart">
-                  <img src="assets/image/shared/icons/icon-shopping-cart.svg" alt="Shopping cart icon">
-                </a>
-              </li>
-            </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="d-flex navbar-search" role="search">
+                <button for="" class="btn btn-search">
+                  <img src="assets/image/shared/icons/icon-search.svg" alt="Search icon">
+                </button>
+                <input class="form-control form-control-sm me-2" type="search" placeholder="" aria-label="Search">
+              </form>
+              <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cursos
+                    <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Todos los cursos</a></li>
+                    <li><a class="dropdown-item" href="#">Administración Financiera</a></li>
+                    <li><a class="dropdown-item" href="#">Inversión</a></li>
+                    <li><a class="dropdown-item" href="#">BBVA</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Te puede interesar
+                    <img src="assets/image/shared/icons/icon-chevron-down.svg" alt="Chevron-down-icon">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Webinar Laboratorio de Soluciones</a></li>
+                    <li><a class="dropdown-item" href="#">Podcast</a></li>
+                    <li><a class="dropdown-item" href="#">Descargas gratuitas</a></li>
+                    <li><a class="dropdown-item" href="#">El Club El Economista</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item btn-login">
+                  <button class="btn btn-info btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
+                </li>
+                <li class="nav-item btn-register">
+                  <button class="btn btn-primary btn-sm btn-custom" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-icon active" aria-current="page" href="#">
+                    <img class="icon-shopping-cart" src="assets/image/shared/icons/icon-shopping-cart.svg" alt="icon">
+                    <span class="notification-label">1</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   </header>
 
   <section class="course-module-heroe">
