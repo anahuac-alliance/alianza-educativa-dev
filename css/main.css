@@ -2930,6 +2930,27 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
+.dashboard > .row .dashboard-info .mis-cursos-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .dashboard > .row .dashboard-info .mis-cursos-title {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.dashboard > .row .dashboard-info .mis-cursos-title span:first-of-type {
+  margin: 10px 0;
+}
+@media (min-width: 992px) {
+  .dashboard > .row .dashboard-info .mis-cursos-title span:first-of-type {
+    margin: 0 20px;
+  }
+}
 .dashboard > .row .dashboard-info .cart-card {
   background-color: var(--ae-white);
   color: var(--ae-black);
@@ -2940,6 +2961,9 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+.dashboard > .row .dashboard-info .icon-clock {
+  width: 20px;
 }
 .dashboard-cost {
   display: flex;
